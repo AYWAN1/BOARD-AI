@@ -1,23 +1,39 @@
 
-"""
-BOARD-AI
-Offline AI Assistant for Technical Board Analysis
+import requests
 
-Initial project entry point.
-"""
-
-PROJECT_NAME = "BOARD-AI"
-VERSION = "0.1.0"
+OLLAMA_URL = "http://localhost:11434"
 
 
-def main():
-    print("=" * 45)
-    print(f"{PROJECT_NAME} - Version {VERSION}")
-    print("Offline Technical Board Analysis Assistant")
-    print("=" * 45)
-    print("Project initialized successfully.")
-    print("AI analysis features are under development.")
+def check_ollama():
+    print("BOARD-AI - Ollama Connection Check")
+    print("-" * 40)
+
+    try:
+        response = requests.get(
+            f"{OLLAMA_URL}/api/tags",
+            timeout=5
+        )
+        response.raise_for_status()
+
+        models = response.json().get("models", [])
+
+        if not models:
+            print("Ollama is running, but no models are installed.")
+            return
+
+        print("Ollama connected successfully!")
+        print("\nAvailable models:")
+
+        for model in models:
+            print(f"- {model.get('name', 'Unknown')}")
+
+    except requests.exceptions.ConnectionError:
+        print("Cannot connect to Ollama.")
+        print("Make sure Ollama is installed and running.")
+
+    except requests.exceptions.RequestException as error:
+        print(f"Connection error: {error}")
 
 
 if __name__ == "__main__":
-    main()
+    check_ollama()
