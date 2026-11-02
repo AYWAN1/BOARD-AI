@@ -1,41 +1,43 @@
 # BOARD-AI
 
-### Offline AI Assistant for Electronic Board Analysis
+### Offline AI-Powered Electronic Engineering & Board Analysis System
 
-BOARD-AI is an AI-powered engineering assistant designed to help analyze electronic boards, understand circuit schematics, and explore connections between components and multiple boards.
+BOARD-AI is an advanced offline AI engineering project designed to assist with electronic board analysis, schematic understanding, PCB connectivity exploration, and technical troubleshooting.
 
-The project focuses on combining local AI models with engineering analysis tools to support technical troubleshooting and schematic understanding.
+The system aims to combine local Large Language Models (LLMs), engineering document intelligence, and structured connectivity analysis to help engineers investigate complex electronic systems, understand signal paths, and identify potential fault locations.
 
-## Project Goals
+## Core Engineering Capabilities
 
-- Analyze electronic circuit boards and their components.
-- Understand schematic diagrams and electrical connections.
-- Trace signal paths and connectivity between components.
-- Explore connections across multiple electronic boards.
-- Provide AI-assisted explanations of engineering documents.
-- Support offline operation using locally running AI models.
+- **Altium Designer Integration:** Working toward understanding and analyzing Altium-related schematic and engineering documents.
+- **Multi-Board Connectivity Analysis:** Exploring electrical connections and relationships across multiple interconnected electronic boards.
+- **Signal Path Tracing:** Identifying and tracing signal paths through components, circuits, and connected boards.
+- **Circuit & Schematic Analysis:** Interpreting electronic schematics, component relationships, and circuit structures.
+- **Fault Analysis & Troubleshooting:** Supporting fault investigation, identifying suspicious connections, and helping locate potential failure points.
+- **Engineering Document Intelligence:** Extracting and organizing technical information from schematics, PDFs, and engineering documentation.
+- **Offline AI Reasoning:** Using locally hosted AI models to support technical analysis without requiring an internet connection.
 
 ## Technology Stack
 
-- **Python** – Application development.
-- **Ollama** – Local AI model integration.
-- **LLMs** – Natural-language technical assistance.
-- **Streamlit** – User interface.
-- **RAG** – Planned document retrieval and knowledge integration.
-- **Graph-based Analysis** – Connectivity and multi-board tracing.
+- **Python** – Core application development.
+- **Ollama** – Local LLM runtime.
+- **LLMs** – AI-based technical reasoning and document understanding.
+- **Streamlit** – Engineering assistant interface.
+- **RAG** – Document retrieval and engineering knowledge integration.
+- **Graph-Based Analysis** – Structured connectivity and multi-board path analysis.
+- **Altium Designer** – Target engineering environment for schematic-related workflows.
 
-## Current Development Status
+## Development Status
 
-BOARD-AI is currently under active development.
+BOARD-AI is under active development.
 
-The project is being developed incrementally, with a focus on improving schematic understanding, document analysis, connectivity tracing, and integration with local AI models.
+The project involves experimentation and progressive development of document analysis, schematic interpretation, Altium-related workflows, signal-path tracing, multi-board connectivity analysis, and fault-investigation capabilities.
 
-Some planned capabilities are not yet implemented or validated.
+Not all planned capabilities are currently implemented or fully validated.
 
-## Vision
+## Long-Term Vision
 
-The long-term goal is to build a fully offline engineering assistant that combines AI reasoning with structured electronic circuit analysis to support engineers in understanding and troubleshooting complex board systems.
+To develop a fully offline AI engineering platform capable of combining schematic intelligence, structured electronic connectivity analysis, multi-board signal tracing, and AI-assisted troubleshooting into one integrated engineering environment.
 
 ---
 
-*Built with Python, local AI, and engineering-focused analysis.*
+*Built with Python, local AI models, and engineering-focused analysis.*
